@@ -1,0 +1,9 @@
+#Counting Bobs
+n=len (s)
+count=0
+
+for x in range (0,n):
+    if (x< n-2 ):
+        if ( s[x]=='b' and s[x+1]=='o' and s[x+2]=='b'):
+            count=count+1
+print 'Number of times bob occurs', count 
