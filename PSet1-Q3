@@ -1,4 +1,4 @@
-#Alphabetic sub string
+#Python code for identifying the longest Alphabetic sub string
 n=len (s)
 
 count=0
