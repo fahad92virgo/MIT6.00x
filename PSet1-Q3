@@ -1,0 +1,26 @@
+#Alphabetic sub string
+n=len (s)
+
+count=0
+max_count=0
+substring=''
+max_substring=''
+
+ascii= ord(s[0])
+
+for x in range (0,n):
+
+    if(ord(s[x])>=ascii):      
+        ascii=ord(s[x])
+        count=count+1
+        substring=substring + s[x]
+    else:       
+        if(count>max_count):
+            max_substring=substring
+            max_count=count 
+        
+        ascii=ord(s[x])
+        count=1
+        substring=s[x]
+
+print 'Longest substring in alphabetical order is:', max_substring
