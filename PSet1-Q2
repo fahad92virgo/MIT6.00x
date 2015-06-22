@@ -1,4 +1,4 @@
-#Counting Bobs
+#Python code for Counting Bobs in a string
 n=len (s)
 count=0
 
