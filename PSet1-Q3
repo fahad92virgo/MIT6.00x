@@ -24,3 +24,17 @@ for x in range (0,n):
         substring=s[x]
 
 print 'Longest substring in alphabetical order is:', max_substring
+
+
+# A more efficient method 
+
+substring = max_substring = s[0]
+
+for n in range(1, len(s)):
+    if s[n] >= substring [-1]:
+        substring += s[n]
+        if len(substring) > len(max_substring):
+            max_substring = substring
+    else: substring = s[n]
+    
+print 'Longest substring in alphabetical order is:' + max_substring
