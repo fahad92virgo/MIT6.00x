@@ -1,4 +1,4 @@
-#Counting Vowels
+#Python code for counting Vowels
 
 n=len (s)
 count=0
